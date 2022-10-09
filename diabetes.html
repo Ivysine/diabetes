@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        background-image: linear-gradient(
+          to right,
+          rgba(0, 130, 100, 0.9),
+          rgba(255, 99, 71, 0.3)
+        );
+        color: white;
+        font-size: 18px;
+      }
+      .nav-bar ul {
+        list-style: none;
+      }
+
+      .nav-bar ul li {
+        display: inline-block;
+      }
+      .nav-bar ul li a {
+        text-decoration: none;
+        padding: 10px;
+        font-size: 1rem;
+        color: white;
+        font-size: 1.2rem;
+      }
+      .nav-bar ul li:hover a {
+        border-bottom: 2px solid tomato;
+        color: aliceblue;
+      }
+      /* // ALIGNING NAV-BAR LINKS// */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+      .header:first-child p {
+        color: tomato;
+        font-size: 2rem;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .nav-bar {
+        display: flex;
+        align-items: center;
+      }
+      .nav-bar button {
+        width: 80px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+      .nav-bar:hover button {
+        background-color: rgb(190, 79, 59);
+      }
+      /* //TAKE HEALTHY STEPS  AGAINST DIABETES// */
+      .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        color: white;
+      }
+      /* //H1 ELEMENT// */
+      .healthy-steps h1 {
+        color: white;
+        word-spacing: 3px;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+      }
+      /* // THE PARAGRAPH WITHIN "TAKE HEALTHY STEPS AGAINST DIABETES// */
+      .healthy-steps p {
+        line-height: 1.5rem;
+      }
+      /* // STYLING THE BUTTON// */
+      .btn {
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-between;
+        align-items: center;
+        width: 220px;
+      }
+
+      .wrapper .btn button {
+        width: 80px;
+        height: 40px;
+        border: none;
+        background-color: tomato;
+        color: white;
+        border-radius: 5px;
+      }
+      .wrapper .btn:hover button {
+        background-color: rgb(190, 79, 59);
+      }
+      /* // STYLING THE IMAGES ON THE RIGHT  // */
+      .wrapper .images img {
+        width: 200px;
+        height: 150px;
+        border-radius: 10px;
+        /* //GIVING THE THE IMAGES DISPLAY GRID IN A BID TO MAKE IT RENDER EXACTLY AS IT IS IN THE TEMPLATE GIVEN TO ME// */
+      }
+      .wrapper .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+      /* //END OF STYLING FOR TAKE HEALTHY STEPS AGAINST DIABETES(DIV WITH THE CLASS OF CONTAINER)// */
+
+      .video {
+        background-color: azure;
+        padding: 80px;
+        font-size: 18px;
+      }
+
+      .video-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .video-content .heading h2 {
+        padding-bottom: 10px;
+      }
+
+      /* //BUTTON WITHIN THE VIDEO CONTAINER// */
+      .video-content .btn3 button {
+        width: 80px;
+        height: 40px;
+        border: none;
+        background-color: tomato;
+        color: white;
+        border-radius: 5px;
+      }
+      .btn3 button:hover {
+        background-color: rgb(190, 79, 59);
+      }
+      .video-content .btn3 {
+        margin-top: 10px;
+      }
+      /* //STYLING THE VIDEO ELEMENT// */
+      video {
+        width: 300px;
+        height: 250px;
+        border-top: 30px solid black;
+        border-bottom: 30px solid black;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div><p>Ptravels</p></div>
+        <div class="nav-bar">
+          <ul>
+            <li><a href="#">Our Activites</a></li>
+            <li><a href="#">Team members</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <button type="button">Diabetes</button>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="healthy-steps">
+          <h1>
+            Take healthy<br />steps against<br />
+            diabetes
+          </h1>
+          <p>
+            Understanding diabetes is the first step towards managing<br />and
+            preventing it.we help people understand diabetes
+          </p>
+          <div class="btn">
+            <button>Diabetes</button>
+            <div>Value blah blah</div>
+          </div>
+        </div>
+        <div class="images">
+          <img src="one.jpg" alt="baby" />
+          <img src="two.jpg" alt="coffee" />
+          <img src="three.jpg" alt="tools" />
+          <img src="four.jpg" alt="coffee" />
+        </div>
+      </div>
+      <div class="icon-wrapper">
+        <!-- <h4>Lorem ipsum dolor sit amet consectetur adipisicing e sint.</h4> -->
+        <div class="icons"></div>
+      </div>
+    </div>
+
+    <div class="video">
+      <div class="video-content">
+        <div class="heading">
+          <h2>Diabetes<br />can affect<br />your kidneys too.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur <br />adipisicing elit.</p>
+          <div class="btn3">
+            <button class="button">Opaque</button>
+          </div>
+        </div>
+        <div class="diabetes-video">
+          <video
+            src="Diabetes.mp4"
+            controls
+            loop
+            poster="../Images/w.jpg"
+          ></video>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
